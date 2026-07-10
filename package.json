@@ -1,0 +1,38 @@
+{
+  "name": "fleet-config",
+  "version": "1.0.0",
+  "description": "Shared toolchain config for the borntojesus/engineering-alpina repo fleet: prettier, eslint flat presets, tsconfig bases",
+  "type": "module",
+  "exports": {
+    "./prettier": "./prettier.json",
+    "./prettier-tailwind": "./prettier-tailwind.json",
+    "./eslint/base": "./eslint/base.mjs",
+    "./tsconfig/base.json": "./tsconfig/base.json",
+    "./tsconfig/next.json": "./tsconfig/next.json"
+  },
+  "files": [
+    "prettier.json",
+    "prettier-tailwind.json",
+    "eslint",
+    "tsconfig"
+  ],
+  "dependencies": {
+    "@eslint/js": "^9.15.0",
+    "eslint-config-prettier": "^9.1.0",
+    "typescript-eslint": "^8.15.0"
+  },
+  "peerDependencies": {
+    "eslint": ">=9",
+    "prettier": ">=3"
+  },
+  "peerDependenciesMeta": {
+    "eslint": {
+      "optional": true
+    },
+    "prettier": {
+      "optional": true
+    }
+  },
+  "license": "UNLICENSED",
+  "repository": "github:borntojesus/fleet-config"
+}
