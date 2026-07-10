@@ -29,6 +29,9 @@ export default tseslint.config(
   ...tseslint.configs.recommended,
   prettier,
   {
+    languageOptions: {
+      globals: { ...globals.node, ...globals.browser },
+    },
     rules: {
       "@typescript-eslint/no-unused-vars": [
         "warn",
