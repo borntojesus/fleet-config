@@ -35,5 +35,6 @@
     }
   },
   "license": "UNLICENSED",
-  "repository": "github:borntojesus/fleet-config"
+  "repository": "github:borntojesus/fleet-config",
+  "packageManager": "pnpm@11.5.2"
 }
